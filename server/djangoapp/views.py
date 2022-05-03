@@ -21,11 +21,11 @@ def index(request):
 
 # Create an `about` view to render a static about page
 def about(request):
-    render(request, 'djangoapp/about.html',)
+    return render(request, 'djangoapp/about.html',)
 
 # Create a `contact` view to return a static contact page
 def contact(request):
-    render(request, 'djangoapp/contact.html',)
+    return render(request, 'djangoapp/contact.html',)
 
 # Create a `login_request` view to handle sign in request
 def login_request(request):
