@@ -1,11 +1,11 @@
   applications:
-  - name: djangoapp
+  - name: FinalDjangoCarDealers
     routes:
-      - route: $HOST.$DOMAIN
+      - route: DjangoCars.eu-de.cf.appdomain.cloud
     memory: 128M
     buildpack: python_buildpack
-  - name: djangoapp-nginx
+  - name: FinalDjangoCar-nyx
     routes:
-      - route: $HOST.$DOMAIN/static
+      - route: DjangoCars.eu-de.cf.appdomain.cloud/static
     memory: 128M
     buildpack: staticfile_buildpack
