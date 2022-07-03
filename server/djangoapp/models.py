@@ -12,7 +12,7 @@ class CarMake(models.Model):
     description = models.TextField(blank=True)
 
     def __str__(self):
-        return str(self.name)
+        return "Carmake: " + self.name + "," + "\n Description: " + self.description
 
 
 class CarModel(models.Model):
